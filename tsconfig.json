@@ -24,7 +24,8 @@
     "**/*.ts",
     "**/*.tsx",
     "app/register/page.jsx",
-    "app/backend/firebase/config.ts"
+    "app/backend/firebase/config.ts",
+    "app/ui/adminDash/navbar/Navbar.tsx"
   ],
   "exclude": ["node_modules"]
 }

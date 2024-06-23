@@ -2,7 +2,15 @@ import Link from "next/link";
 import React from "react";
 import { FaBars, FaBell, FaSearch, FaUserCircle } from "react-icons/fa";
 
-export default function Navbar({ sidebarToggle, setSidebarToggle }) {
+interface NavbarProps {
+  sidebarToggle: boolean;
+  setSidebarToggle: (toggle: boolean) => void;
+}
+
+export default function Navbar({
+  sidebarToggle,
+  setSidebarToggle,
+}: NavbarProps) {
   return (
     <div className="bg-slate-400 px-4 py-3 flex min-h-20 justify-between items-center w-full ">
       <div className="flex items-center text-xl">
